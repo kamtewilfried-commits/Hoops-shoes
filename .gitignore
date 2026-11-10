@@ -1,0 +1,11 @@
+*.class
+.env
+.gradle/
+.idea/
+.vscode/
+build/
+config/db.php
+local.properties
+nbproject/private/
+node_modules/
+target/

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #f88158;
+  padding: 0 30px;
+}
+
+.brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  color: black;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+.brand h1 {
+  font-size: 24px;
+  font-family: "Georgia", serif;
+  color: black;
+}
+
+.section2 {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.header a i {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.header a:hover i {
+  color: #286ca7;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.user-menu {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+
+.user-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  min-width: 180px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.user-dropdown li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.user-dropdown li:last-child {
+  border-bottom: none;
+}
+
+.user-dropdown li a {
+  text-decoration: none;
+  color: rgb(24, 25, 25);
+  display: block;
+}
+
+/* Affiche le menu au survol */
+.user-menu:hover .user-dropdown {
+  display: block;
+}
+
+/* Responsivite */
+@media (max-width: 768px) {
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.brand h1 {
+  font-size: 18px;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #f88158;
+  padding: 0 40px;
+}
+
+}  
+
+#fa-user {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+#buttoncompte {
+  width: 150px;
+  padding: 13px;                
+  background-color: #f88158;    
+  color: black;                 
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#buttoncompte:hover {
+  background-color: 0 0 15px rgb(163, 71, 37);
+  box-shadow: 0 0 25px rgb(128, 62, 38);
+
+}
