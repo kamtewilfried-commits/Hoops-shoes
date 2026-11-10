@@ -1,37 +1,27 @@
-# Simulateur de guichet automatique
+# Hoops & Shoes
 
-Prototype d'un guichet automatique, développé en Java avec une approche orientée objet. Travail pratique du cours Applications natives 1 (Cégep Rosemont).
+Boutique en ligne de chaussures de basketball, réalisée en équipe dans le cadre d'un cours de développement web au Cégep Rosemont.
 
-## Fonctionnalités client
+## Fonctionnalités
 
-- Authentification par code client et NIP, avec blocage du compte après trois essais échoués
-- Consultation du solde de tous les comptes
-- Dépôt, retrait, transfert entre comptes et paiement de facture (frais de 1,25 $)
-- Quatre types de comptes : chèque, épargne, hypothécaire et marge de crédit
-- Utilisation automatique de la marge de crédit lorsque le solde est insuffisant
-- Historique de chaque transaction
-
-## Règles de gestion
-
-- Retrait en multiples de 10 $, maximum 1 000 $ par transaction
-- Le guichet connaît son stock d'argent papier et refuse un retrait si le montant est insuffisant
-- Maximum de 20 000 $ dans le guichet
-
-## Fonctionnalités administrateur
-
-- Créer un client et créer un compte de n'importe quel type
-- Afficher les transactions par compte
-- Bloquer ou débloquer l'accès d'un client
-- Ajouter de l'argent papier dans le guichet
-- Verser l'intérêt de 1 % aux comptes épargne
-- Prélever un montant sur un compte hypothécaire
-- Augmenter de 5 % le solde des marges de crédit
-- Fermer le guichet
-
-## Tests
-
-Le projet contient une classe de test pour la classe `GestionnaireGuichet`.
+- Page d'accueil et catalogue d'articles avec tri
+- Panier d'achat et confirmation de commande
+- Création de compte et connexion
 
 ## Technologies
 
-Java, programmation orientée objet.
+PHP, MySQL, JavaScript, HTML5, CSS3. Les maquettes ont été conçues avec Figma.
+
+## Structure du projet
+
+- `app/controllers`, `app/models`, `app/views` : logique de l'application
+- `app/core/hoops_shoes_db.sql` : script de création de la base de données
+- `public/` : feuilles de style, scripts et images
+- `config/db.example.php` : modèle de configuration de la base de données
+- `index.php` : point d'entrée
+
+## Installation
+
+1. Importer `app/core/hoops_shoes_db.sql` dans MySQL.
+2. Copier `config/db.example.php` en `config/db.php`, puis y mettre les identifiants de votre base de données.
+3. Placer le dossier dans votre serveur local (XAMPP, WAMP ou MAMP) et ouvrir `index.php` dans le navigateur.
